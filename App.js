@@ -39,9 +39,16 @@ const SCREEN_WIDTH = Dimensions.get('window').width
               </Item>
 
               <Text style={[styles.label, styles.datadiri]}>Tanggal Lahir</Text>
-              <DatePicker style={[styles.tanggal, styles.field]} customStyles={{dateInput: {
-            borderColor:'transparent',alignItems:'flex-start', borderWidth: 0.5, fontSize: 12
-          }}} placeholder="Tanggal Lahir"/>
+              <DatePicker style={[styles.tanggal, styles.field]} customStyles={{
+                dateInput: {
+                borderColor:'transparent',alignItems:'flex-start', borderWidth: 0.5, fontSize: 12
+                },
+                placeholderText: {
+                  
+                  fontSize: 16,
+                  color: 'black'
+                }
+          }} placeholder="Tanggal Lahir"/>
               <Text style={[styles.label, styles.datadiri]}>Alamat</Text>
               <Item regular style={[styles.formItems, styles.rounded, styles.field]}>
               <Input placeholder='Alamat'/>
